@@ -35,5 +35,5 @@ jobs:
         run: docker rm -f nodejs-app-container || true  
 
       - name: Run new container
-        run: docker run -d -p 4000:4000 --name nodejs-app-container -e MONGO_PASSWORD='${{ secrets.MONGODBPASS }}' lakhwinderkumar/nodejs-repo:latest
+        run: docker run -d -p 4000:4000 --name nodejs-app-container -e MONGO_PASSWORD='${{ secrets.MONGODBPASS }}' lakhwinderkumar/nodejs-repo
 
